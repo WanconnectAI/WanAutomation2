@@ -124,6 +124,19 @@
     }
     .meta-pill .icon { font-size: 1.1rem; }
     .meta-pill strong { color: var(--yellow); }
+    .date-batch { display: flex; flex-direction: column; gap: .4rem; }
+    .date-row { display: flex; align-items: center; gap: .45rem; flex-wrap: wrap; line-height: 1.4; }
+    .badge-soldout {
+      background: rgba(229,57,53,.9); color: #fff;
+      font-size: .6rem; font-weight: 900; padding: .18rem .52rem;
+      border-radius: 3px; letter-spacing: .05em; text-transform: uppercase; white-space: nowrap;
+    }
+    .badge-selling {
+      background: var(--yellow); color: var(--navy);
+      font-size: .6rem; font-weight: 900; padding: .18rem .52rem;
+      border-radius: 3px; letter-spacing: .05em; text-transform: uppercase; white-space: nowrap;
+      animation: yellowPulse 2s ease-in-out infinite;
+    }
     /* Urgency bar */
     .hero-urgency {
       background: rgba(229,57,53,.15);
@@ -936,7 +949,22 @@
     </p>
 
     <div class="hero-meta">
-      <div class="meta-pill"><span class="icon">📅</span><div><span class="zh">日期：</span><span class="en">Date: </span><strong>25–26 Apr 2026</strong><span class="zh">（周六 &amp; 周日）</span><span class="en"> (Sat &amp; Sun)</span></div></div>
+      <div class="meta-pill"><span class="icon">📅</span>
+        <div class="date-batch">
+          <div class="date-row">
+            <span class="zh">第一批：</span><span class="en">Batch 1:</span>
+            <strong>25–26 Apr 2026</strong>
+            <span class="zh">（周六 &amp; 周日）</span><span class="en">(Sat &amp; Sun)</span>
+            <span class="badge-soldout">✓ <span class="zh">4小时售罄</span><span class="en">Sold Out in 4 hrs</span></span>
+          </div>
+          <div class="date-row">
+            <span class="zh">第二批：</span><span class="en">Batch 2:</span>
+            <strong>9–10 May 2026</strong>
+            <span class="zh">（周六 &amp; 周日）</span><span class="en">(Sat &amp; Sun)</span>
+            <span class="badge-selling">🔥 <span class="zh">快速售出 · 立即行动！</span><span class="en">Selling Fast — Act Now!</span></span>
+          </div>
+        </div>
+      </div>
       <div class="meta-pill"><span class="icon">⏰</span><div><span class="zh">时间：上午 9:30 — 下午 5:30</span><span class="en">Time: 9:30am – 5:30pm</span></div></div>
       <div class="meta-pill"><span class="icon">📍</span><div><span class="zh">地点：<strong>WORQ 9楼, Integra Tower, 吉隆坡</strong></span><span class="en">Venue: <strong>WORQ Level 9, Integra Tower, 348 Jln Tun Razak, KL 50400</strong></span></div></div>
       <div class="meta-pill"><span class="icon">👥</span><div><span class="zh"><strong>限额 30 人</strong>小班制</span><span class="en"><strong>Max 30 Pax</strong> · Small Class</span></div></div>
@@ -1090,8 +1118,8 @@
       <span class="en">Register Now — <span class="yellow">Lock In Your Seat</span></span>
     </h2>
     <p class="mid-cta-sub">
-      <span class="zh">30人小班 · 2026年4月25–26日 · 吉隆坡 · HRDC可申报</span>
-      <span class="en">Class of 30 · 25–26 Apr 2026 · Kuala Lumpur · HRDC Claimable</span>
+      <span class="zh">30人小班 · 第一批 4月25–26日（已售罄）· 第二批 5月9–10日 · 吉隆坡 · HRDC可申报</span>
+      <span class="en">Class of 30 · Batch 1: 25–26 Apr (Sold Out) · Batch 2: 9–10 May · Kuala Lumpur · HRDC Claimable</span>
     </p>
     <a class="btn-cta-yellow ripple-btn" href="https://buy.o.my/wanconnectaiaccount2026" target="_blank">
       <span class="zh">立即报名 (Non-HRDC) → 名额快满</span>
@@ -1585,8 +1613,8 @@
       <span class="en">It's Time to Let Work <span class="yellow">Work for You</span>,<br>Not the Other Way Around</span>
     </h2>
     <p class="final-cta-sub">
-      <span class="zh">2026年4月25–26日 · 30人小班 · 吉隆坡<br>HRDC 可申报 · 名额有限，先到先得</span>
-      <span class="en">25–26 Apr 2026 · Class of 30 · Kuala Lumpur<br>HRDC Claimable · Limited seats — first come, first served</span>
+      <span class="zh">第一批 4月25–26日（已售罄）· 第二批 5月9–10日（快售完！）<br>30人小班 · 吉隆坡 · HRDC 可申报 · 名额有限</span>
+      <span class="en">Batch 1: 25–26 Apr (Sold Out) · Batch 2: 9–10 May (Selling Fast!)<br>Class of 30 · Kuala Lumpur · HRDC Claimable · Limited seats</span>
     </p>
     <div class="final-cta-price">
       <div class="p-label"><span class="zh">HRDC 申报价（最划算）</span><span class="en">HRDC Claimable Price (Best Value)</span></div>
